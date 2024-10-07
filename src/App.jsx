@@ -4,6 +4,7 @@ import { fetchAppMeals } from './http.js'
 
 function App() {
   const [meals , setMeals] = useState([]);
+  const [cart , setCart] = useState([]);
   const[error , setError] = useState();
 
   useEffect(()=>{
