@@ -29,7 +29,7 @@ export default function Header({cart,onUpdateCartItemQuantity}) {
   }
     return ( 
     <>
-        <FormModal title="Checkout Form" cartItems={cart.item} ref={formDialog}/>
+        <FormModal title="Checkout Form" cartItems={cart.items} ref={formDialog}/>
         <CartModal
         ref={modal}
         cartItems={cart.items}
