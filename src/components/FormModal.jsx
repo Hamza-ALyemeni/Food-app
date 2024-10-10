@@ -1,6 +1,6 @@
-import { forwardRef, useImperativeHandle, useRef } from 'react';
+import { forwardRef, useImperativeHandle, useRef ,useState } from 'react';
 import { createPortal } from 'react-dom';
-
+import Success from './Success.jsx';
 
 const FormModal = forwardRef(function Modal(
   { cartItems, title },
@@ -53,7 +53,7 @@ const FormModal = forwardRef(function Modal(
       }
 
       console.log('Order created:', result);
-      dialog.current.close(); // Close the modal after successful order submission
+      // dialog.current.close(); // Close the modal after successful order submission
     } catch (error) {
       console.error('Error:', error.message);
       alert(`Error: ${error.message}`);
